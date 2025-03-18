@@ -1,5 +1,5 @@
-# include <stdio.h>
-# include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #include".\Elem\Casilla.h"
 #include".\BiCola\BiCola.h"
@@ -156,7 +156,6 @@ void sacarFichaDeBarra(int jugador, int dado) {
     }
 }
 
-
 int jugadorTieneMovimientos(int jugador, int dado) {
     Elem bar = (jugador == 1) ? barJugador1 : barJugador2;
     if (bar->cantidad > 0) {
@@ -184,8 +183,6 @@ int jugadorTieneMovimientos(int jugador, int dado) {
     }
     return 0; 
 }
-
-
 
 void avanzarFicha(int jugador, int dado) {
     if (!jugadorTieneMovimientos(jugador, dado)) {
@@ -230,7 +227,6 @@ void avanzarFicha(int jugador, int dado) {
         }
     }
 }
-
 
 int verificarGanador(int jugador) {
     Elem bar = (jugador == 1) ? barJugador1 : barJugador2;
